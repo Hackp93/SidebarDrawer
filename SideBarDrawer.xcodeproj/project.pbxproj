@@ -11,6 +11,7 @@
 		81709EFC286875D0008C0996 /* SideBarDrawer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81709EF1286875D0008C0996 /* SideBarDrawer.framework */; };
 		81709F01286875D0008C0996 /* SideBarDrawerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81709F00286875D0008C0996 /* SideBarDrawerTests.swift */; };
 		81709F02286875D0008C0996 /* SideBarDrawer.h in Headers */ = {isa = PBXBuildFile; fileRef = 81709EF4286875D0008C0996 /* SideBarDrawer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81709F0C2868761A008C0996 /* SideBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81709F0B2868761A008C0996 /* SideBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -21,6 +22,27 @@
 			remoteGlobalIDString = 81709EF0286875D0008C0996;
 			remoteInfo = SideBarDrawer;
 		};
+		81709F4F28687EA5008C0996 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81709F4928687EA5008C0996 /* SideBarDrawerDemo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 81709F1628687E86008C0996;
+			remoteInfo = SideBarDrawerDemo;
+		};
+		81709F5128687EA5008C0996 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81709F4928687EA5008C0996 /* SideBarDrawerDemo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 81709F2C28687E87008C0996;
+			remoteInfo = SideBarDrawerDemoTests;
+		};
+		81709F5328687EA5008C0996 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81709F4928687EA5008C0996 /* SideBarDrawerDemo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 81709F3628687E87008C0996;
+			remoteInfo = SideBarDrawerDemoUITests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +51,8 @@
 		81709EF5286875D0008C0996 /* SideBarDrawer.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = SideBarDrawer.docc; sourceTree = "<group>"; };
 		81709EFB286875D0008C0996 /* SideBarDrawerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SideBarDrawerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		81709F00286875D0008C0996 /* SideBarDrawerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarDrawerTests.swift; sourceTree = "<group>"; };
+		81709F0B2868761A008C0996 /* SideBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarViewController.swift; sourceTree = "<group>"; };
+		81709F4928687EA5008C0996 /* SideBarDrawerDemo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SideBarDrawerDemo.xcodeproj; path = DemoApp/SideBarDrawerDemo/SideBarDrawerDemo.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +77,7 @@
 		81709EE7286875D0008C0996 = {
 			isa = PBXGroup;
 			children = (
+				81709F4928687EA5008C0996 /* SideBarDrawerDemo.xcodeproj */,
 				81709EF3286875D0008C0996 /* SideBarDrawer */,
 				81709EFF286875D0008C0996 /* SideBarDrawerTests */,
 				81709EF2286875D0008C0996 /* Products */,
@@ -72,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				81709EF4286875D0008C0996 /* SideBarDrawer.h */,
+				81709F0B2868761A008C0996 /* SideBarViewController.swift */,
 				81709EF5286875D0008C0996 /* SideBarDrawer.docc */,
 			);
 			path = SideBarDrawer;
@@ -83,6 +109,16 @@
 				81709F00286875D0008C0996 /* SideBarDrawerTests.swift */,
 			);
 			path = SideBarDrawerTests;
+			sourceTree = "<group>";
+		};
+		81709F4A28687EA5008C0996 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				81709F5028687EA5008C0996 /* SideBarDrawerDemo.app */,
+				81709F5228687EA5008C0996 /* SideBarDrawerDemoTests.xctest */,
+				81709F5428687EA5008C0996 /* SideBarDrawerDemoUITests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +200,12 @@
 			mainGroup = 81709EE7286875D0008C0996;
 			productRefGroup = 81709EF2286875D0008C0996 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 81709F4A28687EA5008C0996 /* Products */;
+					ProjectRef = 81709F4928687EA5008C0996 /* SideBarDrawerDemo.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				81709EF0286875D0008C0996 /* SideBarDrawer */,
@@ -171,6 +213,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		81709F5028687EA5008C0996 /* SideBarDrawerDemo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SideBarDrawerDemo.app;
+			remoteRef = 81709F4F28687EA5008C0996 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		81709F5228687EA5008C0996 /* SideBarDrawerDemoTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SideBarDrawerDemoTests.xctest;
+			remoteRef = 81709F5128687EA5008C0996 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		81709F5428687EA5008C0996 /* SideBarDrawerDemoUITests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SideBarDrawerDemoUITests.xctest;
+			remoteRef = 81709F5328687EA5008C0996 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		81709EEF286875D0008C0996 /* Resources */ = {
@@ -195,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81709EF6286875D0008C0996 /* SideBarDrawer.docc in Sources */,
+				81709F0C2868761A008C0996 /* SideBarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +417,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -359,6 +427,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Bikayi.ios.code.SideBarDrawer;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -378,6 +447,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -387,6 +457,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Bikayi.ios.code.SideBarDrawer;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -396,6 +467,7 @@
 		81709F09286875D0008C0996 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S9Z56LSBZ7;
@@ -412,6 +484,7 @@
 		81709F0A286875D0008C0996 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S9Z56LSBZ7;
